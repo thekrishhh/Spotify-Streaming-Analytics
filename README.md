@@ -25,6 +25,8 @@ The dataset contains:
 4. Tracks with high energy-to-liveness ratio
 5. Cumulative likes based on views (Window Functions)
 
+📄 All questions and SQL queries are available in `questions_and_queries.md`
+
 ## ⚙️ SQL Concepts Used
 
 * GROUP BY & Aggregation
