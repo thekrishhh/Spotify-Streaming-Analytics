@@ -10,7 +10,7 @@ FROM spotify
 WHERE stream > 1000000000;
 ```
 
----
+
 
 ## 🎯 Q2: List all albums along with their respective artists
 
@@ -19,7 +19,7 @@ SELECT album, artist
 FROM spotify;
 ```
 
----
+
 
 ## 🎯 Q3: Get the total number of comments for tracks where licensed = TRUE
 
@@ -31,7 +31,7 @@ GROUP BY track
 ORDER BY total_comments DESC;
 ```
 
----
+
 
 ## 🎯 Q4: Find all tracks that belong to the album type 'single'
 
@@ -41,7 +41,7 @@ FROM spotify
 WHERE album_type = 'single';
 ```
 
----
+
 
 ## 🎯 Q5: Count the total number of tracks by each artist
 
@@ -52,7 +52,7 @@ GROUP BY artist
 ORDER BY total_tracks ASC;
 ```
 
----
+
 
 ## 🎯 Q6: Calculate the average danceability of tracks in each album
 
@@ -63,7 +63,7 @@ GROUP BY album
 ORDER BY avg_danceability DESC;
 ```
 
----
+
 
 ## 🎯 Q7: Find the top 5 tracks with the highest energy values
 
@@ -75,7 +75,7 @@ ORDER BY max_energy DESC
 LIMIT 5;
 ```
 
----
+
 
 ## 🎯 Q8: List all tracks along with their views and likes where official_video = TRUE
 
@@ -87,7 +87,7 @@ GROUP BY track
 ORDER BY total_views DESC;
 ```
 
----
+
 
 ## 🎯 Q9: For each album, calculate the total views of all associated tracks
 
@@ -98,7 +98,7 @@ GROUP BY album
 ORDER BY total_views DESC;
 ```
 
----
+
 
 ## 🎯 Q10: Retrieve track names that have been streamed on Spotify more than YouTube
 
@@ -116,7 +116,7 @@ WHERE streamed_on_spotify > streamed_on_youtube
 AND streamed_on_youtube <> 0;
 ```
 
----
+
 
 ## 🎯 Q11: Find the top 3 most-viewed tracks for each artist using window functions
 
@@ -135,7 +135,7 @@ FROM ranking_artist
 WHERE rank <= 3;
 ```
 
----
+
 
 ## 🎯 Q12: Find tracks where the liveness score is above average
 
@@ -145,7 +145,7 @@ FROM spotify
 WHERE liveness > (SELECT AVG(liveness) FROM spotify);
 ```
 
----
+
 
 ## 🎯 Q13: Calculate the difference between highest and lowest energy values for each album
 
@@ -165,7 +165,7 @@ FROM CTE
 ORDER BY energy_difference DESC;
 ```
 
----
+
 
 ## 🎯 Q14: Find tracks where energy-to-liveness ratio is greater than 1.2
 
@@ -176,7 +176,7 @@ WHERE energy_liveness > 1.2
 ORDER BY energy_liveness DESC;
 ```
 
----
+
 
 ## 🎯 Q15: Calculate cumulative sum of likes ordered by views (Window Function)
 
@@ -186,7 +186,7 @@ SUM(likes) OVER (ORDER BY views) AS cumulative_likes
 FROM spotify;
 ```
 
----
+
 
 ## 🚀 Summary
 
