@@ -7,7 +7,6 @@ Analyze Spotify streaming data using SQL to identify trends in music popularity,
 ## 🗂 Dataset
 
 The dataset contains:
-
 * Track name, artist, album
 * Audio features (energy, danceability, liveness)
 * Engagement metrics (views, likes, comments, streams)
