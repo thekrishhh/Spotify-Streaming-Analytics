@@ -186,6 +186,60 @@ SUM(likes) OVER (ORDER BY views) AS cumulative_likes
 FROM spotify;
 ```
 
+## ⚡ Query Optimization
+
+### 🔍 Query Used
+
+```sql
+SELECT 
+    artist,
+    track,
+    views
+FROM spotify
+WHERE artist = 'Gorillaz'
+AND most_played_on = 'Youtube'
+ORDER BY views
+LIMIT 25;
+```
+
+---
+
+### 📉 Before Optimization
+
+* Query used **Sequential Scan (Seq Scan)**
+* Entire table was scanned
+* Higher execution time, 3.163 ms
+
+![Before Optimization](before.png)
+
+---
+
+### ⚡ Optimization Step
+
+* Created index on frequently filtered columns:
+
+```sql
+CREATE INDEX idx_artist_platform 
+ON spotify(artist, most_played_on);
+```
+
+---
+
+### 📈 After Optimization
+
+* Query uses **Index Scan**
+* Only relevant rows are accessed
+* Execution time reduced from 3.163 to 0.647 ms
+
+![After Optimization](after.png)
+
+---
+
+### 🧠 Key Learning
+
+* Indexing significantly improves query performance
+* Useful for queries with `WHERE`, `ORDER BY`, and filtering conditions
+* Should be used carefully to avoid unnecessary overhead
 
 
 ## 🚀 Summary
@@ -197,3 +251,4 @@ These queries demonstrate:
 * Window functions (ranking & cumulative sum)
 * CTEs (Common Table Expressions)
 * Real-world business problem solving using SQL
+* Basic query optimization using indexing
