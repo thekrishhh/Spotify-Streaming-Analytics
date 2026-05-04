@@ -2,8 +2,6 @@
 
 This file contains all business questions along with their SQL queries performed on the Spotify dataset.
 
----
-
 ## 🎯 Q1: Retrieve the names of all tracks that have more than 1 billion streams
 
 ```sql
