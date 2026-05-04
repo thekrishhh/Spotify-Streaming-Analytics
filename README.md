@@ -2,7 +2,7 @@
 
 ## 📌 Objective
 
-Analyze Spotify streaming data using SQL to identify trends in music popularity, artist performance, and user engagement.
+This project was built as part of my SQL learning journey. I used a real Spotify dataset to practice solving business problems and improve my data analysis skills using SQL.
 
 ## 🗂 Dataset
 
