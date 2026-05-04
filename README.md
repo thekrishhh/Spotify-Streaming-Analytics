@@ -34,6 +34,7 @@ The dataset contains:
 * Window Functions
 * CTE (Common Table Expressions)
 * Subqueries
+* Indexing (for query optimization) 
 
 ## 📊 Key Insights
 
