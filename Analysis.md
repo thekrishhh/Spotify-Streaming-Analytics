@@ -210,7 +210,7 @@ LIMIT 25;
 * Entire table was scanned
 * Higher execution time, 3.163 ms
 
-![Before Optimization](before.png)
+![Before Optimization](BeforeOptimization.png)
 
 ---
 
@@ -231,7 +231,7 @@ ON spotify(artist, most_played_on);
 * Only relevant rows are accessed
 * Execution time reduced from 3.163 to 0.647 ms
 
-![After Optimization](after.png)
+![After Optimization](AfterOptimization.png)
 
 ---
 
