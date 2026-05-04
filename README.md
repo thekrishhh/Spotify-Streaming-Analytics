@@ -38,8 +38,9 @@ The dataset contains:
 ## 📊 Key Insights
 
 * A small number of tracks dominate total streams
-* High-energy songs tend to perform better
+* High-energy songs tend to receive higher engagement, indicating that energetic tracks may perform better in streaming platforms.
 * Engagement is strongly linked with visibility (views)
+* Demonstrated query optimization using indexing and execution plan analysis
 
 ## 🚀 What I Learned
 
