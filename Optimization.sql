@@ -43,8 +43,7 @@ LIMIT 25;
 
 -- Creating index on columns used in filtering
 
-CREATE INDEX idx_artist_platform
-ON spotify(artist, most_played_on);
+CREATE INDEX artist_name ON spotify (artist)
 
 ---
 
