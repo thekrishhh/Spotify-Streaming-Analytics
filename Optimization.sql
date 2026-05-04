@@ -13,14 +13,13 @@
 
 ---
 
-EXPLAIN ANALYZE
 SELECT
-artist,
-track,
-views
+  artist,
+  track,
+  views
 FROM spotify
 WHERE artist = 'Gorillaz'
-AND most_played_on = 'Youtube'
+  AND most_played_on = 'Youtube'
 ORDER BY views
 LIMIT 25;
 
