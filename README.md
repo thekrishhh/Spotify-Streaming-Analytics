@@ -49,7 +49,7 @@ The dataset contains:
 
 ## 📎 Files in this Repo
 
-- 📄 [spotify_dataset.csv](./spotify_dataset.csv) → Dataset  
+- 📄 [Spotify Dataset.csv](./Spotify Dataset.csv) → Dataset  
 - 📄 [SpotifyProject.sql](./SpotifyProject.sql) → All SQL queries  
 
 ---
